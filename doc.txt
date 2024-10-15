@@ -1,0 +1,24 @@
+1. Comando para mostrar todas las imagenes que tengo instaladas en mi contenedor docker:
+	docker images
+
+2. Comando para ver imagenes ejecutables que tengo instaladas:
+	Para ver las que estan corriendo nadamas:
+		docker ps
+	Para ver las que estan corriendo y sin correr
+		docker ps -a
+
+3. Comando para instalar, correr y entrar a modo interactivo dentro de un sistema operativo
+   Linux:
+	docker run -it linux_mage
+	
+	ejemplo:
+		docker run -it ubuntu
+   	*** NOTA: Esto instalara una imagen de ubuntu, la ejecutara y nos metera en esta en 
+		  modo interactivo como usuario de root.
+
+4. Comando para ejecutar una imagen detenida de una distro de Linux y entrar a esta en modo 
+   interactivo:
+	docker start -i -a image_id
+	docker start -ia image_id
+
+

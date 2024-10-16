@@ -11,8 +11,10 @@
    Linux:
 	docker run -it linux_mage
 	
-	ejemplo:
+	ejemplos:
 		docker run -it ubuntu
+		docker run -it --name mi_deb debian bash 
+
 	*** NOTA: Esto instalara una imagen de ubuntu, la ejecutara y nos metera en esta en 
 		  modo interactivo como usuario de root.
 
@@ -24,4 +26,13 @@
 5. Comando para descargar una imagen de dockerhub:
 	docker pull image_name
 
+
+6. Comandos para trabajar con python:
+	a) Descargamos la imagen con docker pull python
+	b) Instalamos y mandamos llamar una ejecucion dentro del IDLE de python con:
+		docker run -it --name my_py python
+	c) nos salimos del IDLE con exit() + ENTER
+	d) Ahora abrimos en modo bash la imagen (como si estuvieramos en el server donde esta instalado):
+		docker exec -it my_py bash
+	  *** NOTA: Este comando solo funciona con el contenedor corriendo o ejecutandose
 

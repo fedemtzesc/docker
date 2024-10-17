@@ -36,3 +36,11 @@
 		docker exec -it my_py bash
 	  *** NOTA: Este comando solo funciona con el contenedor corriendo o ejecutandose
 
+7. El comando inspect funciona tanto sobre una imagen o un contenedor y nos retorna
+   un archivo json con informacion del elemento a inspeccionar. La sintaxis de este
+   comando es la siguiente:
+	a) Para inspeccionar una imagen:
+		docker inspect [image_id | image_name]
+	b) Para inspeccionar un contenedor:
+		docker inspect [container_id | container_name]
+

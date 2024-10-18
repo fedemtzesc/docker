@@ -1,0 +1,16 @@
+1. Para crear una nueva rama
+    git checkout -b user_or_alias/num_task
+
+    ejemplo:
+    git checkout -b fdxsoft/2020
+
+2. Despues de agregar un cambio a esa rama, y si la quiero subir al repositorio
+    remoto, ejecuto las siguientes instrucciones:
+    a) Primeramente hago commit de mis cambios:
+        git commit -m "descripcion de los cambios"
+    b) Despues subo los cambios junto con la rama nueva para que sea creada en 
+        el repositorio remoto con el siguiente comando:
+        git push origin user_or_alias/num_task
+
+        en mi ejemplo seria:
+        git push origin fdxsoft/2020

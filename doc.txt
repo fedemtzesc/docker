@@ -26,7 +26,6 @@
 5. Comando para descargar una imagen de dockerhub:
 	docker pull image_name
 
-
 6. Comandos para trabajar con python:
 	a) Descargamos la imagen con docker pull python
 	b) Instalamos y mandamos llamar una ejecucion dentro del IDLE de python con:
@@ -50,3 +49,15 @@
 	b) Luego procedemos a entrar en modo interactivo
 		docker exec -it image_id bash
 	   *** NOTA: En esta modalidad, si nos salimos con exit, no se cae el contenedor, sigue corriendo.
+
+9. 	Comando para eliminar una imagen:
+		docker rmi id_image
+
+10.	Comando para eliminar un contenedor:
+		docker rm id_image
+
+		*** NOTA: EL contenedor tiene que estar detenido para poder eliminarlo.
+
+11. Comando para detener un contenedor:
+		docker stop id_image
+	

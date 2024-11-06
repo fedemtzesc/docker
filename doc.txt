@@ -70,3 +70,19 @@
 14. Eliminar todas las imagenes de golpe
 	docker rmi --force $(docker images -a -q)
 
+15. Para crear imagenes propias de nuestros proyectos:
+	a) Dentro de nuestro proyecto creamos dos archivos:
+		i)Dockerfile .- Para guardar las instrucciones de instalacion de nuestra aplicacion
+		ii) .dockerignore .- Para definir que archivos no se van con el proyecto de la aplicacion
+
+	b) Una vez terminado de crear y configurar el archivo Dockerfile ejemcutamos el siguiente comando
+	   para crear la imagen de nuestro proyecto:
+		docker build --tag nombre_de_nuestra_imagen_nueva .
+	   una vez que damos enter empezara el proceso de creacion de nuestra imagen
+
+	c) Si la creacion de la imagen termina sin errores, podemos proceder a verificar si nuestra imagen
+	   fue creada ejecutando el siguiente comando en el bash:
+		docker images
+	   Si nuestra imagen fue creada con exito, aparecera en la lista de imagenes de docker que tenemos
+	   instaladas en nuestro equipo.
+

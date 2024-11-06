@@ -61,3 +61,12 @@
 11. Comando para detener un contenedor:
 		docker stop id_image
 	
+12. Detener todos los contenedores que estan corriendo:
+	docker stop $(docker ps -a -q) 
+
+13. Eliminar todos los contenedores
+	docker rm $(docker ps -a -q)
+
+14. Eliminar todas las imagenes de golpe
+	docker rmi --force $(docker images -a -q)
+

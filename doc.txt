@@ -44,3 +44,9 @@
 	b) Para inspeccionar un contenedor:
 		docker inspect [container_id | container_name]
 
+8. Como entrar en modo interactivo (modo bash) dentro de un contenedor:
+	a) Primeramente iniciamos el contenedor si es que no esta levantado:
+		docker start image_id
+	b) Luego procedemos a entrar en modo interactivo
+		docker exec -it image_id bash
+	   *** NOTA: En esta modalidad, si nos salimos con exit, no se cae el contenedor, sigue corriendo.
